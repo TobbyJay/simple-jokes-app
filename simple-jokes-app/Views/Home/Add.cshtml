@@ -1,0 +1,46 @@
+﻿@model Joke; 
+@{
+    ViewData["Title"] = "Add Show";
+}
+
+<h2 class="text-center">Add a show</h2>
+
+
+<div class="text-center mt-5">
+    <form asp-controller="Home" asp-action="Add" method="post" class="mt-3">
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Comedian Name</label>
+            <div class="col-sm-10">
+                <input asp-for="Comedian" class="form-control" />
+
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Stand-up name</label>
+            <div class="col-sm-10">
+                <input asp-for="StandUp" class="form-control" />
+
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Link to Stand-up show</label>
+            <div class="col-sm-10">
+                <input asp-for="Link" class="form-control" />
+
+            </div>
+
+        </div>
+
+
+
+        <div>
+            <center>
+                <button type="submit" class="btn btn-primary w-25">Submit</button>
+            </center>
+        </div>
+    </form>
+</div>
+
